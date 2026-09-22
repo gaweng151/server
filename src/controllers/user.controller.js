@@ -63,6 +63,7 @@ const login = async (req, res, next) => {
       select: {
         id: true,
         username: true,
+        token: true,
         role: true,
       },
     });

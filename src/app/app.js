@@ -8,6 +8,12 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/test", (req, res) => {
+  res.json({
+    success: true,
+    message: "API connected successfully",
+  });
+});
 // initialize routers
 app.use("/user", require("../routes/user.routes"));
 
